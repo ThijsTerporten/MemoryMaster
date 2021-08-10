@@ -1,104 +1,209 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Project summary:
 
-Welcome USER_NAME,
+This is a simple and fun memory game created for my milestone 2 project for the code institute full stack development program.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+# UX
 
-## Gitpod Reminders
+## Owners goals:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The goal off the project is to provide a fun experience while playing the game.
 
-`python3 -m http.server`
+## User Stories: 
 
-A blue button should appear to click: _Make Public_,
+- As a user I would like to have the rules off the game explained to me in a simple to understand way.
+- As a user I would like to have a challenge while playing the game.
+- As a user I would like to feel rewarded for completing the game.
+- As a user I would like to keep track of my performence throughout the game. 
+- As a user I would like a nice clean interface while playing the game.
+- As a user I would like to be able to reset my progress and try again.
+- As a user I would like to be able to easily navigate between game modes.
 
-Another blue button should appear to click: _Open Browser_.
+## Structure: 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The web application is responsive across all devices.
+The web application is layed out in the following way:
 
-A blue button should appear to click: _Make Public_,
+1. The landing page has the name of the game in a large font size.
+2. Underneath the title is a carousel which explains the rules of the game.
+3. Underneath the carousel is a large button which brings you to the game mode selection screen.
 
-Another blue button should appear to click: _Open Browser_.
+On the game selection screen there will be three cards shown which function as buttons.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+1. Game mode = EASY
+2. Game mode = NORMAL   
+3. Game mode = HARD
+4. At the bottom off the screen is a back button to bring the user back to the rules page.
 
-To log into the Heroku toolbelt CLI:
+Game Type page structure:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+1. Each GameType has the same layout the only difference being
+ - Easy = 10 cards, 5 matches.
+ - Normal = 20 cards, 10 matches.
+ - Hard = 40 cards, 20 matches. 
+2. On the top of the page a timer will start running to keep track of the time elapsed. 
+3. A counter will be next to that which counts the ammount of moves made by the user.
+4. In the top right will be two buttons. 
+ - One to reset the current game.
+ - One to bring the user back to the gameType selection page.
+5. Once a user has matched all cards a modal will popup and congratulate the user.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Wireframes: 
 
-------
+Wireframes for the layout of the project can be found here: 
 
-## Release History
+## Surface: 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Fonts: 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The font used is Roboto with a fallback off sans-serif.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Colors:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+To have a clean layout I have decided to use black and white as the dominant colors. This matches very well with the glassmorphism effect used for the cards.
+Black is the main background-color and text color is white.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Images:
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+All images are taken from: 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+# Features: 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Current Features: 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- At this moment there are 3 game modes. Easy, normal, hard.
+- All three game modes have different animations on their respective selection screen.
+- A timer will keep track off how long it takes to complete the game.
+- A counter will show how much moves a user has made.
+- Completing the game will show the users score. 
+- The user is easily able to navigate between game modes.
+- The user is able to manually refresh the game. 
+- Popup warnings are shown to prevent the user from resetting or returning by accident.
+- Once a user has matched cards they are removed from the game. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Future Features: 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- An extreme game mode.
+- Turn the app in a game library with severel different classic games.
+- Link to different API's so that a user never sees the same images.
+- Implement a star rating based on the users score.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+# Technologies used:
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Languages: 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- HTML
+- CSS
+- javaScript
 
-------
+## Libraries:
 
-## FAQ about the uptime script
+- JQuery: for easier and faster javascript and DOM manipulation.
+- Bootstrap: to simplify page layout and make the game responsive across all devices.
 
-**Why have you added this script?**
+## Other programs used:
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- Balsamiq: for wireframing.
+- Google Fonts: for the font size.
+- Can I use: to check for browser compatibillity.
+- [Github](https://github.com/): for hosting the projects repository and creating a live page with [Github pages](https://pages.github.com/)
+- [Visual Studio Code](https://code.visualstudio.com/): as a IDE (Integrated Development Environment) for developing the project
+- [Git](https://en.wikipedia.org/wiki/Git): for version control
 
-**How will this affect me?**
+## Code validation:
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- [JShint](https://jshint.com/) to validate JavaScript code
+- [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS code
+- [W3 HTML Validator](https://validator.w3.org/) to validate HTML code
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+# Testing: 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+For this projects testing chrome devtools has been used extensively to check whether everything functions the way it was intended as far as responsiveness goes. 
+The following screen sizes have been used: 
+- A 27 inch monitor screen.
+- A 16 inch laptop.
+- A iphone 11. 
 
-**So….?**
+The following browsers have been used to test the web application:
+- Google Chrome.
+- Safari.
+- Mozilla Firefox.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Layout should be the same across all devices but the preferred method to play the game has to be on a larger screen. This gives more room to layout the cards in a spacious way and have the images visible.
+The first thing done on each page is check whether everything acts as intended as far as responsiveness goes.
 
-**Can I opt out?**
+## Instruction page:
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Testing for the landing page has been conducted in the following way.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+1. Open devTools and check responsivness across screen sizes.
+2. Click the carousel icons to check whether they move as intended.
+3. Press the Play button to check whether it takes the user to the gameType selection page.
 
-**Anything more?**
+## gameType-selection page.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Testing for the gameType page has been conducted in the following way:
 
----
+1. Hover over each gameType card to check whether it is a button.
+2. Click on the gameType card to check whether it takes the user to the correct gameType page.
+3. Click on the back button to check whether it takes the user back to the instructions page.
 
-Happy coding!
+## gameType pages:
+
+1. Count the ammount of cards generated by JQuery depending on the gameType chosen.
+2. Make a move to check whether the timer and the move counter are working and start when the user makes its first move.
+3. Match two cards to check whether they are removed from the game.
+4. Press the reset button to check whether the popup works as intended.
+5. Press the button that takes the user back to the gameType selection screen to check whether the popup works as intended.
+
+## User Stories Testing:
+
+- As a user I would like to have the rules off the game explained to me in a simple to understand way.
+    > The landing page carousel takes the user through the rules step by step.
+- As a user I would like to have a challenge while playing the game.
+    > There are 3 different gameTypes for a user to try and complete as fast as possible.
+- As a user I would like to feel rewarded for completing the game.
+    > A congratulatory message pops up showing the user how fast and in how many moves they have completed the game.
+- As a user I would like to keep track of my performence throughout the game. 
+    > A timer shows the user how much time has elapsed since their first move, and a move counter shows the user how many moves they have made.
+- As a user I would like a nice clean interface while playing the game.
+    > Black and white layout with a nice contrast with the cards and simple buttons help keep the screen clear for the user.
+- As a user I would like to be able to reset my progress and try again.
+    > A reset button in the top right helps the user to easily reset the game.
+- As a user I would like to be able to easily navigate between game modes.
+    > A button has been made to take the user back to the selection screen. 
+
+# BUGS and other issues:
+
+
+# Deployment:
+
+## [Github pages](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+
+The project has been deployed to github pages in the following way:
+
+1. Go to repository 
+2. Click on "Settings"
+3. Scroll on the lefthand menu until the section "Pages". This will open the section "Github Pages"
+4. Select on the "source" dropdown menu the "main branch" option
+5. A success message (in green) appears and shows you the link for your live preview page in Github Pages.
+
+## [Local deployment](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+A local clone of this repository can be made in the following way:
+
+1. Go to repository
+2. Click on the button "code"
+3. Select the "HTTPS" option.
+4. Copy the URL presented
+5. Open your Terminal
+6. Create a directory for storing this repository
+7. Type "git clone" and paste the URL in that you previously copied
+8. Press enter to create local clone repository
+
+# Credits: 
+
+## Content: 
+
+## Code:
+
+## Acknowledgments:
