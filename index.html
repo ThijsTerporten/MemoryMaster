@@ -33,8 +33,10 @@
     <!-- Section that holds the carousel for the rules -->
     <section class="container">
         <div class="row">
+            <!-- Bootstrap code for carousel carousel-fade added for a different slider animation -->
             <div class="col d-flex justify-content-center">
                 <div id="carouselExampleCaptions" class="carousel slide rule-slide carousel-fade" data-ride="carousel">
+                    <!-- List for the data slides -->
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -42,6 +44,7 @@
                         <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
                         <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
                     </ol>
+                    <!-- Inner HTML for slide 1 -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="carousel-caption d-none d-md-block">
@@ -49,24 +52,28 @@
                                 <p>The following slides will explain the basic rules to the game! Have FUN!!</p>
                             </div>
                         </div>
+                         <!-- Inner HTML for slide 2 -->
                         <div class="carousel-item">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Game Selection screen</h5>
                                 <p>Select one of the three game modes</p>
                             </div>
                         </div>
+                         <!-- Inner HTML for slide 3 -->
                         <div class="carousel-item">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Matching Cards</h5>
                                 <p>The goal is to match all cards having none of them remaining at the end, matching cards is done by clicking on two cards.</p>
                             </div>
                         </div>
+                         <!-- Inner HTML for slide 4 -->
                         <div class="carousel-item">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Scoring</h5>
                                 <p>Once the first move is made a timer will start running and each move will be counted</p>
                             </div>
                         </div>
+                         <!-- Inner HTML for slide 5 -->
                         <div class="carousel-item">
                             <div class="carousel-caption d-none d-md-block d-flex justify-content-center">
                                 <h5>Have FUN!</h5>
@@ -74,6 +81,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Buttons for going back and forth in the carousel -->
                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -85,6 +93,19 @@
                 </div>
             </div>
         </div>
+    </section>
+    <!-- Section for the button that takes you to the game selection page -->
+    <section class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <button class="btn btn-light">
+                    <a href="gametype.html">
+                        PLAY!
+                    </a>
+                </button>
+            </div>
+        </div>
+
     </section>
     <!-- Jquery script link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
