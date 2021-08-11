@@ -7,7 +7,15 @@
 html,
 body {
     height: 100%;
-    background: linear-gradient(0deg, black, #fafafa 50%, black);
+    background: linear-gradient(0deg, black, #fafafa 30%, black);
     font-family: 'Roboto', 'sans-serif';
     color: var(--text-color);
+}
+
+
+/* Styling for rule slider */
+
+.rule-slide {
+    width: 50vw;
+    height: 50vh;
 }
