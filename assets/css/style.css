@@ -19,3 +19,7 @@ body {
     width: 50vw;
     height: 50vh;
 }
+
+.carousel-item {
+    height: 32rem;
+}
