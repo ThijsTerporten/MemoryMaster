@@ -13,6 +13,7 @@ body {
 }
 
 
+
 /* Styling for rule slider */
 
 .rule-slide {
@@ -22,4 +23,60 @@ body {
 
 .carousel-item {
     height: 32rem;
+}
+
+.carousel-item
+h5 {
+    text-decoration: underline;
+}
+
+/* Styling for game select button */
+
+/* Styling for game select button before hovered over */
+.game-select--button {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: rgb(33 33 33 / 13%);
+    border: 0.2rem solid rgba(217 217 217 / 0.3);
+    backdrop-filter: blur(4rem);
+    box-shadow: 0 1rem 10rem rgb(0 0 0 / 20%);
+    position: relative;
+}
+
+/* Styling for pseudo elements for game select button */
+.game-select--button::before,
+.game-select--button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+/* Styling for after pseudo element when hovered over */
+.game-select--button:hover::after {
+    background-color: red;
+    animation: pulse 1000ms infinite;
+    z-index: 0;
+}
+
+/* Animation for after pseudo element */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* Font awesome play icon custom styling */
+.play-button {
+    color: #fafafa;
+    font-size: 3rem;
 }
