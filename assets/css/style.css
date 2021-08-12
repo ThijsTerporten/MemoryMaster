@@ -82,7 +82,17 @@ h5 {
 }
 
 /* Styling for game selection screen */
-.border {
+/* .border {
     background-color: aquamarine;
     height: 50vh;
+} */
+
+.glass {
+        width: min(90%, 40rem);
+        height: min(75vh, 40rem);
+        background-color: rgb(33 33 33 / 13%);
+        border: 0.2rem solid rgba(217 217 217 / 0.3);
+        backdrop-filter: blur(2rem);
+        /* border-radius: 2rem; */
+        box-shadow: 0 1rem 10rem rgba(0,0,0,0.2);  /* x y blur color */
 }
