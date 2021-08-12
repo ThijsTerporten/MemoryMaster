@@ -80,3 +80,9 @@ h5 {
     color: #fafafa;
     font-size: 3rem;
 }
+
+/* Styling for game selection screen */
+.border {
+    background-color: aquamarine;
+    height: 50vh;
+}
