@@ -174,6 +174,10 @@ Testing for the gameType page has been conducted in the following way:
 
 # BUGS and other issues:
 
+## Content not showing in the carousel sliders:
+
+When I layed out the carousel on the homepage. The content wasn't showing in the slides. A quick search in bootstrap documentation stated that you need to set a height for the carousel-item and carousel-sliders. 
+
 
 # Deployment:
 
