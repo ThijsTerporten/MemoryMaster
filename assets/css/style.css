@@ -10,6 +10,9 @@ body {
     background: linear-gradient(0deg, black, #fafafa 30%, black);
     font-family: 'Roboto', 'sans-serif';
     color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -86,6 +89,7 @@ h5 {
     width: 20rem;
     height: 25rem;
     text-align: center;
+    border-radius: 5px;
 }
 
 .card-title {
@@ -99,6 +103,8 @@ h5 {
 .select-button {
     width: 5rem;
     height: 5rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.356);
 }
 
 
