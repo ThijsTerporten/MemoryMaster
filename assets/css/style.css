@@ -6,7 +6,7 @@
 
 html,
 body {
-    height: 100%;
+    min-height: 100vh;
     background: linear-gradient(0deg, black, #fafafa 30%, black);
     font-family: 'Roboto', 'sans-serif';
     color: var(--text-color);
@@ -81,11 +81,8 @@ h5 {
     font-size: 3rem;
 }
 
-/* Styling for game selection screen */
-/* .border {
-    background-color: aquamarine;
-    height: 50vh;
-} */
+
+/* Glassmorphism styling */
 
 .glass {
         width: min(90%, 40rem);
@@ -95,4 +92,12 @@ h5 {
         backdrop-filter: blur(2rem);
         /* border-radius: 2rem; */
         box-shadow: 0 1rem 10rem rgba(0,0,0,0.2);  /* x y blur color */
+}
+
+/* Styling for game selection cards */
+
+
+.game-selection--card {
+    width: 20rem;
+    height: 25rem;
 }
