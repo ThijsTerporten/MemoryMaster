@@ -14,7 +14,7 @@ body {
     justify-content: center;
 }
 
-/* Background images for the body element */
+/* Background images for the body element for each page*/
 
 .city {
     background-image: url('../images/bg-images/city.jpg');
@@ -155,7 +155,7 @@ h5 {
 
 .select-button--easy:hover::after {
     background-color: green;
-    animation: hardmode 1500ms infinite;
+    animation: pulse 1500ms infinite;
 }
 
 .select-button--normal::before,
@@ -170,7 +170,7 @@ h5 {
 
 .select-button--normal:hover::after {
     background-color: yellow;
-    animation: hardmode 1500ms infinite;
+    animation: pulse 1500ms infinite;
 }
 
 .select-button--hard::before,
@@ -185,7 +185,7 @@ h5 {
 
 .select-button--hard:hover::after {
     background-color: red;
-    animation: hardmode 1500ms infinite;
+    animation: pulse 1500ms infinite;
 }
 
 
@@ -203,17 +203,3 @@ h5 {
     }
 }
 
-/* Animation for easy mode game selection card */
-/* Animation for normal mode game selection card */
-/* Animation for hardmode game selection card */
-
-@keyframes hardmode {
-    0% {
-        transform: scale(1);
-        opacity: 0.8;
-    }
-    100% {
-        transform: translate(1.2);
-        opacity: 0;
-    }
-}
