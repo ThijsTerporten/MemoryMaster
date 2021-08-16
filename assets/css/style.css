@@ -20,6 +20,36 @@ body {
     background-image: url('../images/bg-images/city.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+}
+
+.arena {
+    background-image: url('../images/bg-images/arena.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.forest {
+    background-image: url('../images/bg-images/forest.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.canyon {
+    background-image: url('../images/bg-images/canyon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.volcano {
+    background-image: url('../images/bg-images/volcano.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 /* Styling for rule slider */
