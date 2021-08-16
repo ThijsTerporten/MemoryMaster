@@ -7,7 +7,6 @@
 html,
 body {
     min-height: 100vh;
-    background: linear-gradient(0deg, black, #fafafa 30%, black);
     font-family: 'Roboto', 'sans-serif';
     color: var(--text-color);
     display: flex;
@@ -15,7 +14,13 @@ body {
     justify-content: center;
 }
 
+/* Background images for the body element */
 
+.city {
+    background-image: url('../images/bg-images/city.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Styling for rule slider */
 
@@ -78,7 +83,7 @@ h5 {
 .glass {
         background-color: rgb(255 255 255 / 20%);
         border: 0.2rem solid rgba(217 217 217 / 0.3);
-        backdrop-filter: blur(2rem);
+        backdrop-filter: blur(0.3rem);
         box-shadow: 0 1rem 10rem rgba(0,0,0,0.2);  /* x y blur color */
 }
 
