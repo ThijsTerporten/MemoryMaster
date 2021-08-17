@@ -190,6 +190,17 @@ h5 {
 
 /* Styling for gameTypes  */
 
+/* .game-board {
+    width: 1080px;
+    margin: 0 auto;
+} */
+
+.game-card {
+    float: left;
+    margin: 2px;
+    height: 200px;
+    width: 150px;
+}
 
 /* ANIMATIONS */
 
