@@ -15,19 +15,26 @@ function flipCard () {
         turnedCards = false;
         secondCard = this;
 
-        //Checks whether cards match by using data attribute
-        if (firstCard.dataset.pokemon === secondCard.dataset.pokemon) {
-            //Cards Match
-            firstCard.removeEventListener('click', flipCard);
-            secondCard.removeEventListener('click', flipCard);
-        } else {
-            //Cards do not match 
-            setTimeout(() => {
-                firstCard.classList.remove('visible');
-                secondCard.classList.remove('visible');
-            }, 1000);
-        }
+     checkForMatch();
     }
 }
+
+// Function to check whether cards match
+function checkForMatch() {
+            //Checks whether cards match by using data attribute
+            if (firstCard.dataset.pokemon === secondCard.dataset.pokemon) {
+                //Cards Match
+                firstCard.removeEventListener('click', flipCard);
+                secondCard.removeEventListener('click', flipCard);
+            } else {
+                //Cards do not match 
+                setTimeout(() => {
+                    firstCard.classList.remove('visible');
+                    secondCard.classList.remove('visible');
+                }, 1000);
+            }
+    
+}
+
 
 cards.forEach (card => card.addEventListener('click', flipCard));
