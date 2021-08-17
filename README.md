@@ -184,6 +184,10 @@ When clicking on cards really quickly after one another the game would crash and
 This has been fixed by creating a new variable to Time Out the game board which checks whether the function is already running and otherwise blocks flipCard function from running.
 
 
+## Double Clicking causes card to stay open
+
+When accidentally double clicking on cards the function would count the first and second click on the same card. A new if-statement has been added at the start of the flipCard function to prevent the same card being counted as the first and second card. 
+
 # Deployment:
 
 ## [Github pages](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
