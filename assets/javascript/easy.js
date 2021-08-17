@@ -21,28 +21,24 @@ function flipCard() {
 
 // Function to check whether cards match
 function checkForMatch() {
-    //Checks whether cards match by using data attribute
-    if (firstCard.dataset.pokemon === secondCard.dataset.pokemon) {
-        //Cards Match
-        correctMatch();
-    } else {
-        resetCards();
-    }
-
+    //Variable that holds statement to check whether cards match
+    let cardsMatch = firstCard.dataset.pokemon === secondCard.dataset.pokemon;
+    //Ternary operator that checks whether the condition is true or false
+    cardsMatch ? correctMatch() : resetCards();
 }
 
+// Keeps cards open if they are a match
 function correctMatch() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
 }
 
+// Reset cards if they are not a match
 function resetCards() {
-    //Cards do not match 
     setTimeout(() => {
         firstCard.classList.remove('visible');
         secondCard.classList.remove('visible');
     }, 1000);
-
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
