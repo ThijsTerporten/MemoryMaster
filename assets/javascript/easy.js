@@ -6,6 +6,7 @@ let firstCard, secondCard;
 
 function flipCard() {
     if (timeOutBoard) return; // Blocks additional cards from flipping when function is already running
+    if (this === firstCard) return; //Prevents double clicking
 
     this.classList.add('visible');
 
@@ -36,6 +37,8 @@ function checkForMatch() {
 function correctMatch() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
+
+    resetGame();
 }
 
 // Reset cards if they are not a match
@@ -45,8 +48,22 @@ function resetCards() {
         firstCard.classList.remove('visible');
         secondCard.classList.remove('visible');
 
-    timeOutBoard = false; //Opens board again once function has completed
+        resetGame();
     }, 1000);
 }
 
+function resetGame() {
+    [flipCard, timeOutBoard] = [false, false];
+    [firstCard, secondCard] = [null, null];
+}
+
+// Immediately invoked function expression 
+// Function that shuffles cards based on css order 
+(function shuffle() {
+    cards.forEach(card => {
+        let randomize = Math.floor(Math.random() * 10);
+        card.style.order = randomize;
+    });
+})();
+ 
 cards.forEach(card => card.addEventListener('click', flipCard));
