@@ -1,15 +1,20 @@
 const cards = document.querySelectorAll('.game-card')
 
 let turnedCards = false;
+let timeOutBoard = false;
 let firstCard, secondCard;
 
 function flipCard() {
+    if (timeOutBoard) return; // Blocks additional cards from flipping when function is already running
+
     this.classList.add('visible');
 
     if (!turnedCards) {
         //First card chosen
         turnedCards = true;
         firstCard = this;
+
+        return; //Closes function early to return to the top
     } else {
         //Second card chosen
         turnedCards = false;
@@ -35,9 +40,12 @@ function correctMatch() {
 
 // Reset cards if they are not a match
 function resetCards() {
+    timeOutBoard = true;  //Times out the board
     setTimeout(() => {
         firstCard.classList.remove('visible');
         secondCard.classList.remove('visible');
+
+    timeOutBoard = false; //Opens board again once function has completed
     }, 1000);
 }
 
