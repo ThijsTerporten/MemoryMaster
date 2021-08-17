@@ -202,6 +202,7 @@ h5 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    backface-visibility: hidden;
 }
 
 .pokeball {
@@ -218,6 +219,26 @@ h5 {
     width: 150px;
     position: relative;
     border-radius: 5px;
+}
+
+.game-card.visible .card-back {
+    transform: rotateY(-180deg);
+}
+
+.game-card.visible .card-front {
+    transform: rotateY(0);
+}
+
+.card-front {
+    transform: rotateY(180deg);
+}
+
+.pokemon {
+    border-radius: 50%;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border: 0.2rem solid rgba(255,255,255,0.25);
 }
 
 /* ANIMATIONS */
