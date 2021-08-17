@@ -1,31 +1,33 @@
-// If statement to check whether the document has loaded
+const cards = document.querySelectorAll('.game-card')
 
-if (document.readyState === 'loading') { 
-    document.addEventListener('DOMContentLoaded', ready());
-} else {
-    ready();
-}
+let turnedCards = false;
+let firstCard, secondCard;
 
-class MemoryMaster {
-    constructor(totalTime, cards) {
-        this.cardsArray = cards;
-        this.totalTime = totalTime;
-        this.timeRemaining = totalTime;
-        this.timer = document.getElementById('timeElapsed');
-        this.counter = document.getElementById('movesUsed');
+function flipCard () {
+    this.classList.add('visible');
+
+    if (!turnedCards) {
+        //First card chosen
+        turnedCards = true;
+        firstCard = this;
+    } else {
+        //Second card chosen
+        turnedCards = false;
+        secondCard = this;
+
+        //Checks whether cards match by using data attribute
+        if (firstCard.dataset.pokemon === secondCard.dataset.pokemon) {
+            //Cards Match
+            firstCard.removeEventListener('click', flipCard);
+            secondCard.removeEventListener('click', flipCard);
+        } else {
+            //Cards do not match 
+            setTimeout(() => {
+                firstCard.classList.remove('visible');
+                secondCard.classList.remove('visible');
+            }, 1000);
+        }
     }
-    startGame() {
-        this.cardToCheck = null;
-    }
 }
 
-
-function ready() {
-    let cards = Array.from(document.getElementsByClassName('game-card'));
-
-    cards.forEach(card => {
-        card.addEventListener('click', () => {
-            // Game.flipCard(card);
-        });
-    });
-}
+cards.forEach (card => card.addEventListener('click', flipCard));
