@@ -178,6 +178,11 @@ Testing for the gameType page has been conducted in the following way:
 
 When I layed out the carousel on the homepage. The content wasn't showing in the slides. A quick search in bootstrap documentation stated that you need to set a height for the carousel-item and carousel-sliders. 
 
+## Clicking cards really fast makes the game bug out.
+
+When clicking on cards really quickly after one another the game would crash and not display properly anymore. Causing some cards to stay open. 
+This has been fixed by creating a new variable to Time Out the game board which checks whether the function is already running and otherwise blocks flipCard function from running.
+
 
 # Deployment:
 
