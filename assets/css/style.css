@@ -190,6 +190,10 @@ h5 {
 
 /* Styling for gameTypes  */
 
+.game-board {
+    perspective: 500px;
+}
+
 .game-info {
     font-size: 25px;
 }
@@ -203,6 +207,7 @@ h5 {
     align-items: center;
     overflow: hidden;
     backface-visibility: hidden;
+    transition: transform 500ms ease-in-out;
 }
 
 .pokeball {
