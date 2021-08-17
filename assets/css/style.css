@@ -190,16 +190,34 @@ h5 {
 
 /* Styling for gameTypes  */
 
-/* .game-board {
-    width: 1080px;
-    margin: 0 auto;
-} */
+.game-info {
+    font-size: 25px;
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pokeball {
+    position: absolute;
+    width: 120px;
+    height: 175px;
+    border-radius: 5px;
+    border: 0.2rem solid rgba(255,255,255,0.25);
+}
 
 .game-card {
-    float: left;
     margin: 2px;
     height: 200px;
     width: 150px;
+    position: relative;
+    border-radius: 5px;
 }
 
 /* ANIMATIONS */
