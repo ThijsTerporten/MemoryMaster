@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll('.game-card')
+const card = document.querySelectorAll('.game-card')
 const countDownTimer = document.getElementById('timeElapsed')
 const moveCounter = document.getElementById('movesUsed')
 
@@ -9,7 +9,7 @@ let countDownStart = false;
 let turnedCards = false;
 let timeOutBoard = false;
 let firstCard, secondCard;
-
+let cards = [...card]
 let matched = [];
 
 
@@ -83,6 +83,7 @@ function correctMatch() {
     firstCard.removeEventListener('click', [flipCard]);
     secondCard.removeEventListener('click', [flipCard]);
     matched.push([flipCard]);
+    console.log(matched);
     resetGame();
 }
 
@@ -115,3 +116,4 @@ function resetGame() {
 
 //Event listener for clicking cards
 cards.forEach(card => card.addEventListener('click', flipCard));
+console.log(cards);
