@@ -1,15 +1,44 @@
 const cards = document.querySelectorAll('.game-card')
+const countDownTimer = document.getElementById('timeElapsed')
+const moveCounter = document.getElementById('movesUsed')
 
+let time;
+let seconds = 60;
+let countDownStart = false;
 let turnedCards = false;
 let timeOutBoard = false;
 let firstCard, secondCard;
 
+
+// Function for the timer to run
+var countDown = setInterval(() => {
+    if (countDownStart = true) {
+        seconds--;
+        countDownTimer.innerHTML = seconds;
+        if (seconds <= 0 || seconds < 1) {
+            clearInterval(countDown);
+        }
+    }
+}, 1000);
+
+// Function to stopTime
+
+function stopTime() {
+    clearInterval(countDown);
+}
+
+// Function to count the moves
+
+function countMoves() {
+    moveCounter.innerHTML++;
+}
+
+// function for flipping cards
 function flipCard() {
     if (timeOutBoard) return; // Blocks additional cards from flipping when function is already running
     if (this === firstCard) return; //Prevents double clicking
-
     this.classList.add('visible');
-
+    
     if (!turnedCards) {
         //First card chosen
         turnedCards = true;
@@ -20,7 +49,7 @@ function flipCard() {
         //Second card chosen
         turnedCards = false;
         secondCard = this;
-
+        countMoves();
         checkForMatch();
     }
 }
@@ -43,7 +72,7 @@ function correctMatch() {
 
 // Reset cards if they are not a match
 function resetCards() {
-    timeOutBoard = true;  //Times out the board
+    timeOutBoard = true; //Times out the board
     setTimeout(() => {
         firstCard.classList.remove('visible');
         secondCard.classList.remove('visible');
@@ -65,5 +94,5 @@ function resetGame() {
         card.style.order = randomize;
     });
 })();
- 
+
 cards.forEach(card => card.addEventListener('click', flipCard));
