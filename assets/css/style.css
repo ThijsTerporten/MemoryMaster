@@ -16,40 +16,30 @@ body {
 
 /* Background images for the body element for each page*/
 
-.city {
-    background-image: url('../images/bg-images/city.jpg');
+
+.bg-image {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.city {
+    background-image: url('../images/bg-images/city.jpg');
 }
 
 .arena {
     background-image: url('../images/bg-images/arena.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .forest {
     background-image: url('../images/bg-images/forest.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .canyon {
     background-image: url('../images/bg-images/canyon.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .volcano {
     background-image: url('../images/bg-images/volcano.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
 }
 
 /* Styling for rule slider */
