@@ -3,28 +3,29 @@ const countDownTimer = document.getElementById('timeElapsed')
 const moveCounter = document.getElementById('movesUsed')
 
 let time;
-let seconds = 60;
+let seconds = 5;
 let countDownStart = false;
 let turnedCards = false;
 let timeOutBoard = false;
 let firstCard, secondCard;
 
+let matched = [];
+
+
 
 // Function for the timer to run
 var countDown = setInterval(() => {
-    if (countDownStart = true) {
         seconds--;
         countDownTimer.innerHTML = seconds;
-        if (seconds <= 0 || seconds < 1) {
-            clearInterval(countDown);
-        }
-    }
+        stopTime();
 }, 1000);
 
 // Function to stopTime
 
 function stopTime() {
-    clearInterval(countDown);
+    if (seconds <= 0 || seconds < 1) {
+        clearInterval(countDown);
+    } 
 }
 
 // Function to count the moves
@@ -66,7 +67,6 @@ function checkForMatch() {
 function correctMatch() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
-
     resetGame();
 }
 
