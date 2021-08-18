@@ -2,8 +2,9 @@ const cards = document.querySelectorAll('.game-card')
 const countDownTimer = document.getElementById('timeElapsed')
 const moveCounter = document.getElementById('movesUsed')
 
+let moves = 0;
 let time;
-let seconds = 5;
+let seconds = 60;
 let countDownStart = false;
 let turnedCards = false;
 let timeOutBoard = false;
@@ -14,24 +15,33 @@ let matched = [];
 
 
 // Function for the timer to run
-var countDown = setInterval(() => {
+
+function countDown() {
+    time = setInterval(function() {
         seconds--;
         countDownTimer.innerHTML = seconds;
-        stopTime();
-}, 1000);
+        if (seconds <= 0 || seconds < 1) {
+            stopTime();
+        };     
+    }, 1000);
+};
 
 // Function to stopTime
-
 function stopTime() {
-    if (seconds <= 0 || seconds < 1) {
-        clearInterval(countDown);
+        clearInterval(time);
     } 
-}
+
 
 // Function to count the moves
 
 function countMoves() {
-    moveCounter.innerHTML++;
+    moves++; 
+    moveCounter.innerHTML = moves;
+
+    if (moves == 1) {
+        seconds = 60;
+        countDown();
+    }
 }
 
 // function for flipping cards
