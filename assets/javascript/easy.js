@@ -78,18 +78,8 @@ function correctMatch() {
     firstCard.removeEventListener('click', [flipCard]);
     secondCard.removeEventListener('click', [flipCard]);
     matched.push([flipCard]);
-    removeCard();
     resetGame();
 }
-
-
-// Remove Cards function
-
-function removeCard() {
-    firstCard.style = "display:none;"
-    secondCard.style = "display:none;"
-}
-
 
 // Reset cards if they are not a match
 function resetCards() {
