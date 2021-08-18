@@ -60,11 +60,16 @@ The font used is Roboto with a fallback off sans-serif.
 ### Colors:
 
 To have a clean layout I have decided to use black and white as the dominant colors. This matches very well with the glassmorphism effect used for the cards.
-Black is the main background-color and text color is white.
+Black is the main background-color and text color is white. This has later been changed to a scenic background that matches with the memory game cards which has you find matching pokemon.
+
 
 ### Images:
 
 All images are taken from: 
+
+- Pokemon Company website (Main background images)
+- Unsplash: the pokeball cover for the cards.  
+
 
 # Features: 
 
