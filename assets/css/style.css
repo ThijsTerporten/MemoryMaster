@@ -1,14 +1,14 @@
 /* General Styling */
 
 :root {
-    --text-color: #fafafa;
+    --text-color: gold;
 }
 
 html,
 body {
     min-height: 100vh;
     font-family: 'Roboto', 'sans-serif';
-    color: var(--text-color);
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
