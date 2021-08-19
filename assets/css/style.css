@@ -250,6 +250,55 @@ ul {
     margin: auto;
 }
 
+/* Styling for the win screen modal */
+
+.win-screen {
+    position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	visibility: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.glass-modal {
+    backdrop-filter: blur(0.8rem);
+}
+
+.popup {
+    margin: auto;
+}
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fafafa;
+}
+
+.popup h2 {
+	margin-top: 0;
+	color: #fafafa;
+}
+
+.popup .content-1,
+.content-2 {
+	max-height: 30%;
+	overflow: auto;
+	text-align: start;
+    color: #fafafa;
+}
+
+.show {
+    visibility: visible;
+}
 /* ANIMATIONS */
 
 /* Animation for after pseudo element for the navigation buttons */
