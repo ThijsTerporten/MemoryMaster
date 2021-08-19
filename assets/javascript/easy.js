@@ -1,6 +1,7 @@
 const card = document.querySelectorAll('.game-card')
 const countDownTimer = document.getElementById('timeElapsed')
 const moveCounter = document.getElementById('movesUsed')
+const stars = document.getElementsByClassName('fas fa-star')
 
 let moves = 0;
 let time;
@@ -11,7 +12,7 @@ let timeOutBoard = false;
 let firstCard, secondCard;
 let cards = [...card]
 let matched = [];
-
+let starlist = document.querySelectorAll('.score-panel li')
 
 //Function startGame
 
@@ -49,6 +50,8 @@ function countMoves() {
         seconds = 60;
         countDown();
     }
+
+    starsEarned();
 }
 
 // function for flipping cards
@@ -142,13 +145,21 @@ function shuffle(cards) {
 //Function for star rating system
 
 function starsEarned() {
-    
+    if (moves > 8 && moves < 12){
+        for( i= 0; i < 3; i++){
+            if(i > 1){
+                stars[i].style.visibility = "hidden";
+            }
+        }
+    }
+    else if (moves > 13){
+        for( i= 0; i < 3; i++){
+            if(i > 0){
+                stars[i].style.visibility = "hidden";
+            }
+        }
+    }
 }
-
-
-
-
-
 
 //Event listener for clicking cards
 cards.forEach(card => card.addEventListener('click', flipCard));
