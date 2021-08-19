@@ -139,6 +139,16 @@ function shuffle(cards) {
     });
 };
 
+//Function for star rating system
+
+function starsEarned() {
+    
+}
+
+
+
+
+
 
 //Event listener for clicking cards
 cards.forEach(card => card.addEventListener('click', flipCard));
