@@ -126,6 +126,7 @@ function resetAll() {
     moves = 0;
     moveCounter.innerHTML = moves;
     matched =[];
+    countDownTimer.innerHTML = 60;
     stopTime();
 }
 
