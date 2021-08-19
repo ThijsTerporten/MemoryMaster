@@ -14,6 +14,8 @@ body {
     justify-content: center;
 }
 
+
+
 /* Background images for the body element for each page*/
 
 
@@ -234,6 +236,18 @@ h5 {
     width: 140px;
     height: 140px;
     border: 0.2rem solid rgba(255,255,255,0.25);
+}
+
+.score-panel  {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0 0 0 0;
+    color: gold;
+}
+
+ul {
+    margin: auto;
 }
 
 /* ANIMATIONS */
