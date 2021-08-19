@@ -12,8 +12,8 @@ let timeOutBoard = false;
 let firstCard, secondCard;
 let cards = [...card]
 let matched = [];
-let starlist = document.querySelectorAll('.score-panel li')
-
+let starlist = document.querySelectorAll('.score-panel li');
+let winScreen = document.getElementById('win-screen');
 //Function startGame
 
 function startGame() {
@@ -46,7 +46,7 @@ function countMoves() {
     moves++;
     moveCounter.innerHTML = moves;
 
-    if (moves == 1) {
+    if (moves === 1) {
         seconds = 60;
         countDown();
     }
@@ -63,14 +63,14 @@ function countMoves() {
 // Counts the move here 
 // Checks whether the two data-attributes off the card match
 function flipCard() {
-    if (timeOutBoard) return; 
-    if (this === firstCard) return; 
+    if (timeOutBoard) return;
+    if (this === firstCard) return;
     this.classList.add('visible');
     if (!turnedCards) {
         turnedCards = true;
         firstCard = this;
 
-        return; 
+        return;
     } else {
         turnedCards = false;
         secondCard = this;
@@ -101,8 +101,8 @@ function correctMatch() {
 //Times out the board
 // Sets a timeout for removing the classes off visible
 function resetCards() {
-    timeOutBoard = true; 
-    setTimeout(function() {
+    timeOutBoard = true;
+    setTimeout(function () {
         firstCard.classList.remove('visible');
         secondCard.classList.remove('visible');
         resetGame();
@@ -128,7 +128,7 @@ function resetAll() {
     }
     moves = 0;
     moveCounter.innerHTML = moves;
-    matched =[];
+    matched = [];
     showStars();
     countDownTimer.innerHTML = 60;
     stopTime();
@@ -146,16 +146,15 @@ function shuffle(cards) {
 //Function for star rating system
 
 function starsEarned() {
-    if (moves > 8 && moves < 12){
-        for( i= 0; i < 3; i++){
-            if(i > 1){
+    if (moves > 8 && moves < 12) {
+        for (i = 0; i < 3; i++) {
+            if (i > 1) {
                 stars[i].style.visibility = "hidden";
             }
         }
-    }
-    else if (moves > 13){
-        for( i= 0; i < 3; i++){
-            if(i > 0){
+    } else if (moves > 13) {
+        for (i = 0; i < 3; i++) {
+            if (i > 0) {
                 stars[i].style.visibility = "hidden";
             }
         }
@@ -166,10 +165,14 @@ function starsEarned() {
 // Function created to make stars visible on reset button
 
 function showStars() {
-    for (var i= 0; i < stars.length; i++){
+    for (var i = 0; i < stars.length; i++) {
         stars[i].style.visibility = "visible";
     }
 }
+
+//Winscreen modal 
+
+
 //Event listener for clicking cards
 cards.forEach(card => card.addEventListener('click', flipCard));
 console.log(cards);
