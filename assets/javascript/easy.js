@@ -129,6 +129,7 @@ function resetAll() {
     moves = 0;
     moveCounter.innerHTML = moves;
     matched =[];
+    showStars();
     countDownTimer.innerHTML = 60;
     stopTime();
 }
@@ -161,6 +162,14 @@ function starsEarned() {
     }
 }
 
+
+// Function created to make stars visible on reset button
+
+function showStars() {
+    for (var i= 0; i < stars.length; i++){
+        stars[i].style.visibility = "visible";
+    }
+}
 //Event listener for clicking cards
 cards.forEach(card => card.addEventListener('click', flipCard));
 console.log(cards);
