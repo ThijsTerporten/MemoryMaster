@@ -13,6 +13,13 @@ let cards = [...card]
 let matched = [];
 
 
+//Function startGame
+
+function startGame() {
+    shuffle(cards);
+}
+
+window.onload = startGame();
 
 // Function for the timer to run
 
@@ -104,14 +111,32 @@ function resetGame() {
     [firstCard, secondCard] = [null, null];
 }
 
-// Immediately invoked function expression 
+
+// Function to restart the game when button is clicked
+// shuffles the cards
+// Loops over the cards array and removes each class off visible
+// reset moves to 0 
+// empty out matched array
+// stops the timer
+function resetAll() {
+    startGame();
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].classList.remove('visible');
+    }
+    moves = 0;
+    moveCounter.innerHTML = moves;
+    matched =[];
+    stopTime();
+}
+
+
 // Function that shuffles cards based on css order 
-(function shuffle() {
+function shuffle(cards) {
     cards.forEach(card => {
         let randomize = Math.floor(Math.random() * 10);
         card.style.order = randomize;
     });
-})();
+};
 
 
 //Event listener for clicking cards
