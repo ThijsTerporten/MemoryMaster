@@ -1,14 +1,14 @@
 /* General Styling */
 
 :root {
-    --text-color: gold;
+    --text-color: #fafafa;
 }
 
 html,
 body {
     min-height: 100vh;
     font-family: 'Roboto', 'sans-serif';
-    color: black;
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,22 +28,29 @@ body > .container {
 }
 .city {
     background-image: url('../images/bg-images/city.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.1)) , url("../images/bg-images/city.jpg");
+    
 }
 
 .arena {
     background-image: url('../images/bg-images/arena.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.1)) , url('../images/bg-images/arena.jpg');
+
 }
 
 .forest {
     background-image: url('../images/bg-images/forest.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3)) , url('../images/bg-images/forest.jpg');
 }
 
 .canyon {
     background-image: url('../images/bg-images/canyon.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3)) , url('../images/bg-images/canyon.jpg');
 }
 
 .volcano {
     background-image: url('../images/bg-images/volcano.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3)) , url('../images/bg-images/volcano.jpg');
 }
 
 /* Styling for rule slider */
