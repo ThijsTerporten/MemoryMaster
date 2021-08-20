@@ -122,6 +122,7 @@ p {
         border: 0.2rem solid rgba(217 217 217 / 0.3);
         backdrop-filter: blur(0.3rem);
         box-shadow: 0 1rem 10rem rgba(0,0,0,0.2);  /* x y blur color */
+        border-radius: 5px;
 }
 
 /* Styling for game selection cards */
@@ -132,6 +133,7 @@ p {
     height: 25rem;
     text-align: center;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .card-title {
@@ -198,7 +200,7 @@ p {
 /* Styling for gameTypes  */
 
 .restart {
-    font-size: 4rem;
+    font-size: 1rem;
     color: #fafafa;
 }
 
@@ -208,6 +210,10 @@ p {
 
 .game-info {
     font-size: 25px;
+}
+
+.game-info--header {
+    margin-bottom: 5px;
 }
 
 .card-face {
@@ -269,6 +275,7 @@ p {
 ul {
     margin: auto;
 }
+
 
 /* Styling for the win screen modal */
 
