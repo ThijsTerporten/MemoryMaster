@@ -93,7 +93,7 @@ function correctMatch() {
     firstCard.removeEventListener('click', [flipCard]);
     secondCard.removeEventListener('click', [flipCard]);
     matched.push([flipCard]);
-    console.log(matched);
+    winGame();
     resetGame();
 }
 
@@ -171,6 +171,19 @@ function showStars() {
 }
 
 //Winscreen modal 
+function winGame() {
+    if (matched.length === 5) {
+        winScreen.classList.add('show');
+        document.getElementById("finalMove").innerHTML = moves;
+        var starsLeft = showStars.innerHTML;
+        document.getElementById("starRating").innerHTML = starsLeft;
+    }
+}
+
+function playAgain(){
+    winScreen.classList.remove("show");
+    resetAll();
+}
 
 
 //Event listener for clicking cards
