@@ -5,7 +5,7 @@ const stars = document.getElementsByClassName('fas fa-star')
 
 let moves = 0;
 let time;
-let seconds = 60;
+let seconds = 100;
 let countDownStart = false;
 let turnedCards = false;
 let timeOutBoard = false;
@@ -47,7 +47,7 @@ function countMoves() {
     moveCounter.innerHTML = moves;
 
     if (moves === 1) {
-        seconds = 60;
+        seconds = 100;
         countDown();
     }
 
@@ -146,13 +146,13 @@ function shuffle(cards) {
 //Function for star rating system
 
 function starsEarned() {
-    if (moves > 8 && moves < 12) {
+    if (moves > 16 && moves < 20) {
         for (i = 0; i < 3; i++) {
             if (i > 1) {
                 stars[i].style.visibility = "hidden";
             }
         }
-    } else if (moves > 13) {
+    } else if (moves > 21) {
         for (i = 0; i < 3; i++) {
             if (i > 0) {
                 stars[i].style.visibility = "hidden";
@@ -172,7 +172,7 @@ function showStars() {
 
 //Winscreen modal 
 function winGame() {
-    if (matched.length === 5) {
+    if (matched.length === 10) {
         winScreen.classList.add('show');
         document.getElementById("finalMove").innerHTML = moves;
         var starsLeft = showStars.innerHTML;
