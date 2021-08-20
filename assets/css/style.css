@@ -18,6 +18,17 @@ body > .container {
     padding-top: 10px;
 }
 
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 3rem;
+}
 /* Background images for the body element for each page*/
 
 
@@ -55,18 +66,13 @@ body > .container {
 
 /* Styling for rule slider */
 
-.rule-slide {
-    width: 50vw;
-    height: 50vh;
-}
-
-.carousel-item {
-    height: 32rem;
-}
-
-.carousel-item
-h5 {
-    text-decoration: underline;
+.game-rules {
+    animation-name: popup;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-delay: 0.4s;
+    animation-fill-mode: backwards;
+    font-size: 2rem;
 }
 
 /* Styling for game select button */
@@ -190,6 +196,11 @@ h5 {
 }
 
 /* Styling for gameTypes  */
+
+.restart {
+    font-size: 4rem;
+    color: #fafafa;
+}
 
 .game-board {
     perspective: 500px;
@@ -322,3 +333,17 @@ ul {
     }
 }
 
+
+/* Animation for the game rules to pop in the screen */
+@keyframes popup {
+    from {
+        backdrop-filter: blur(2rem);
+        top: 55%;
+        opacity: 0;
+    }
+    to {
+        backdrop-filter: blur(0.4rem);
+        top: 50%;
+        opacity: 1;
+    }
+}
