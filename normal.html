@@ -17,9 +17,227 @@
 <!-- Link to css stylesheet -->
 <link rel="stylesheet" href="assets/css/style.css">
 <!-- Page Title -->
-<title>Memory Master</title>
+<title>Memory Master-normal</title>
 </head>
 <body class="canyon bg-image">
+    <!-- Header that countains the h1 page title -->
+    <header class="d-flex container-fluid justify-content-center game-info--header">
+        <div class="row glass">
+            <div class="col">
+                <h1>Memory Master</h1>
+                <h2>Normal</h2>
+            </div>
+        </div>
+    </header>
+    <!-- Layout for Game Board -->
+    <section class="game-board container-fluid">
+        <div class="row justify-content-around align-items-center">
+            <div class="game-info glass">
+                Time: <span id="timeElapsed">60</span>
+            </div>
+            <div class="glass game-info">
+                <ul class="score-panel">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                </ul>
+            </div>
+            <div class="game-info glass">
+                Moves: <span id="movesUsed">0</span>
+            </div>
+            <div class="game-info glass restart" onclick="resetAll()">
+                <button class="btn"><i class="fas fa-redo"></i></button>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="game-card glass" data-pokemon="bulbasaur">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/bulbasaur.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="bulbasaur">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/bulbasaur.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="treecko">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/treecko.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="treecko">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/treecko.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="turtwig">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/turtwig.png">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="game-card glass" data-pokemon="bulbasaur">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/bulbasaur.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="bulbasaur">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/bulbasaur.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="treecko">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/treecko.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="treecko">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/treecko.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="turtwig">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/turtwig.png">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="game-card glass" data-pokemon="bulbasaur">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/bulbasaur.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="bulbasaur">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/bulbasaur.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="treecko">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/treecko.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="treecko">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/treecko.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="turtwig">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/turtwig.png">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="game-card glass" data-pokemon="turtwig">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/turtwig.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="chikorita">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/chikorita.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="chikorita">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/chikorita.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="pikachu">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/pikachu.png">
+                </div>
+            </div>
+            <div class="game-card glass" data-pokemon="pikachu">
+                <div class="card-back card-face">
+                    <img class="pokeball" src="assets/images/bg-images/pokeball.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="pokemon" src="assets/images/card-images/pikachu.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WINSCREEN MODAL -->
+    <div class="win-screen glass-modal glass" id="win-screen">
+        <div class="popup">
+            <h2>Congratulations You Won!!!</h2>
+            <a class="close" href=#>×</a>
+            <div class="content-1">
+                Congratulations you matched all cards!!
+            </div>
+            <div class="content-2">
+                <p>You made <span id=finalMove> </span> moves </p>
+                <p>Rating: <span id=starRating></span></p>
+            </div>
+            <button id="play-again" onclick="playAgain()" class="glass">
+                Play again!</a>
+            </button>
+            <a href="gametype.html">
+                <button class="glass">Return to game selection screen</button>
+            </a>
+        </div>
+    </div>
 <!-- Jquery script link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Popper link included with bootstrap -->
