@@ -14,7 +14,9 @@ body {
     justify-content: center;
 }
 
-
+body > .container {
+    padding-top: 10px;
+}
 
 /* Background images for the body element for each page*/
 
