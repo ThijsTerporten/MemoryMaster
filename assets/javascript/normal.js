@@ -6,7 +6,6 @@ const stars = document.getElementsByClassName('fas fa-star');
 let moves = 0;
 let time;
 let seconds = 100;
-let countDownStart = false;
 let turnedCards = false;
 let timeOutBoard = false;
 let firstCard, secondCard;
