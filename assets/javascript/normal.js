@@ -44,7 +44,7 @@ function stopTime() {
 //GameOver function
 function gameOver() {
     if (seconds === 0) {
-        window.alert('Game Over Try again bcky cliing the reset button');
+        window.alert('Game Over Try again by clicking the reset button');
     }
 }
 
