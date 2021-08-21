@@ -194,6 +194,7 @@ Testing for the gameType page has been conducted in the following way:
 ## Content not showing in the carousel sliders:
 
 When I layed out the carousel on the homepage. The content wasn't showing in the slides. A quick search in bootstrap documentation stated that you need to set a height for the carousel-item and carousel-sliders. 
+Later on I decided to forego the idea of having a modal display my instructions. It would have been a nice touch however I did not have enough time remaining after the bulk of the work was done.
 
 ## Clicking cards really fast makes the game bug out.
 
@@ -204,6 +205,18 @@ This has been fixed by creating a new variable to Time Out the game board which 
 ## Double Clicking causes card to stay open
 
 When accidentally double clicking on cards the function would count the first and second click on the same card. A new if-statement has been added at the start of the flipCard function to prevent the same card being counted as the first and second card. 
+
+# Existing Bugs
+
+## Cheats
+
+A user is able to trick the game in thinking a match is made by continuesly clicking on matches that have been made. However I found out this bug existing really late into my project deadline and thus was unable to remove it.
+
+## Backdrop filter not working on certain devices
+
+On really old browsers the `backdrop-filter: blur()` property of CSS-3 doesn't work properly. 
+In Firefox it has to be manually enabled. Instructions for this can be found on [caniuse.com](https://caniuse.com/css-backdrop-filter).
+
 
 # Deployment:
 
