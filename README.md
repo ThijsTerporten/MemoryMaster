@@ -13,13 +13,9 @@ A deployed version of my website can be found [here](https://thijsterporten.gith
 * [UX](#ux)
   + [User-stories](#user-stories)
 * [Structure](#structure)
-* [Structure](#structure)
 * [Wireframes](#wireframes)
 * [Features](#features)
-  + [Existing-features](#existing-features)
-  + [Future-features](#futere-features)
 * [Testing](#testing)
-* [Bugs](#bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
 * [Content](#content)
@@ -143,6 +139,7 @@ All images are taken from:
 - Link to different API's so that a user never sees the same images.
 - Implement a star rating based on the users score.
 > Star rating has been implemented. 
+- A way to display all stats for the user. Time remaining stars earned etc.
 
 # Technologies used:
 
@@ -156,6 +153,7 @@ All images are taken from:
 
 - JQuery: for easier and faster javascript and DOM manipulation.
 - Bootstrap: to simplify page layout and make the game responsive across all devices.
+- Popper: to ensure all JavaScript libraries from bootstrap work as intended. [Popper](https://popper.js.org)
 
 ## Other programs used:
 
@@ -165,7 +163,9 @@ All images are taken from:
 - [Github](https://github.com/): for hosting the projects repository and creating a live page with [Github pages](https://pages.github.com/)
 - [Visual Studio Code](https://code.visualstudio.com/): as a IDE (Integrated Development Environment) for developing the project
 - [Git](https://en.wikipedia.org/wiki/Git): for version control
-- 
+- Google Chrome Dev Tools: for testing purposes. Console logging checking for breakpoints.
+- Prettier: to beautify code. 
+- FontAwesome: used for icons in the footer. [FontAwesome](https://fontawesome.com/)
 
 ## Code validation:
 
@@ -239,7 +239,8 @@ Testing for the gameType page has been conducted in the following way:
 ## Content not showing in the carousel sliders:
 
 When I layed out the carousel on the homepage. The content wasn't showing in the slides. A quick search in bootstrap documentation stated that you need to set a height for the carousel-item and carousel-sliders. 
-Later on I decided to forego the idea of having a modal display my instructions. It would have been a nice touch however I did not have enough time remaining after the bulk of the work was done.
+Later on I decided to forego the idea of having a modal display my instructions. It would have been a nice touch however I did not have enough time remaining after the bulk of the work was done. So for simplicity I
+made a unordered list explaining the rules.
 
 ## Clicking cards really fast makes the game bug out.
 
@@ -308,6 +309,7 @@ A huge help for this project and how to go around with using the functions and w
 
 However all functions are rewritten in my own words.
 Inspiration for the modal was taken from the top tutorial however again styled with my own classes.
+Code has been reused, rewritten and refactored to make it my 'own'.
 
 ### Use off glassmorphism:
 
@@ -321,3 +323,7 @@ Has again been used to lay out the page in order to achieve a responsive layout.
 ## Acknowledgments:
 
 Even though she was on holiday for most part of my deadline I would still like to acknowledge my mentor Antonija Simic for guiding me and keeping me in track for what is important in my code. 
+
+**This project was created for educational purposes only, credit for all images goes to their owners**
+
+**Created by Thijs Terporten**
