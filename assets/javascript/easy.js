@@ -29,6 +29,7 @@ function countDown() {
         countDownTimer.innerHTML = seconds;
         if (seconds <= 0 || seconds < 1) {
             stopTime();
+            gameOver();
         }
     }, 1000);
 }
@@ -36,6 +37,13 @@ function countDown() {
 // Function to stopTime
 function stopTime() {
     clearInterval(time);
+}
+
+// gameOver function
+function gameOver() {
+    if (seconds === 0) {
+        window.alert('Game Over Try again bcky cliing the reset button');
+    }
 }
 
 // Function to count the moves
