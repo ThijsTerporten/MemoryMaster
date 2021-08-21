@@ -107,6 +107,7 @@ footer {
     background-color: rgb(33 33 33 / 13%);
     border: 0.2rem solid rgba(217 217 217 / 0.3);
     backdrop-filter: blur(4rem);
+    -webkit-backdrop-filter: blur(4rem);
     box-shadow: 0 1rem 10rem rgb(0 0 0 / 20%);
     position: relative;
 }
@@ -143,6 +144,7 @@ footer {
     background-color: rgb(255 255 255 / 20%);
     border: 0.2rem solid rgba(217 217 217 / 0.3);
     backdrop-filter: blur(0.3rem);
+    -webkit-backdrop-filter: blur(4rem);
     box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.2);
     /* x y blur color */
     border-radius: 5px;
@@ -331,6 +333,7 @@ ul {
 
 .glass-modal {
     backdrop-filter: blur(0.8rem);
+    -webkit-backdrop-filter: blur(4rem);
 }
 
 .popup {
@@ -385,12 +388,14 @@ ul {
 @keyframes popup {
     from {
         backdrop-filter: blur(2rem);
+        -webkit-backdrop-filter: blur(4rem);
         top: 55%;
         opacity: 0;
     }
 
     to {
         backdrop-filter: blur(0.4rem);
+        -webkit-backdrop-filter: blur(4rem);
         top: 50%;
         opacity: 1;
     }
