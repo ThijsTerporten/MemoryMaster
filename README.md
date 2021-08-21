@@ -289,6 +289,13 @@ A local clone of this repository can be made in the following way:
 
 ## Content and Media:
 
+Pictures where taken from:
+
+- [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page)
+- Pokemon Company website (Main background images) [Website](https://www.pokemon.com/us/pokemon-virtual-backgrounds/)
+- Unsplash: the pokeball cover for the cards.[LinkToImage](https://unsplash.com/photos/trz1LbugtHI)
+- Sprites where downloaded from [this](https://veekun.com/dex/downloads) Website.
+
 ## Code:
 
 A huge help for this project and how to go around with using the functions and writing them is a combination of:
@@ -307,4 +314,7 @@ which is a dutch youtube channel that has live coding sessions each tuesday that
 ### Bootstrap:
 
 Has again been used to lay out the page in order to achieve a responsive layout.
+
 ## Acknowledgments:
+
+Even though she was on holiday for most part of my deadline I would still like to acknowledge my mentor Antonija Simic for guiding me and keeping me in track for what is important in my code. 
