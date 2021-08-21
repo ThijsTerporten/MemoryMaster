@@ -382,20 +382,21 @@
     <!-- WINSCREEN MODAL -->
     <div class="win-screen glass-modal glass" id="win-screen">
         <div class="popup">
-            <h2>Congratulations You Won!!!</h2>
+            <h2 class="#">Congratulations You Won!!!</h2>
             <a class="close" onclick="playAgain()">X</a>
             <div class="content-1">
-                Congratulations you matched all cards!!
+                <p class="win-screen--text">Congratulations you matched all cards!!</p>
             </div>
             <div class="content-2">
-                <p>You made <span id=finalMove> </span> moves </p>
-                <p>Rating: <span id=starRating></span></p>
+                <p class="win-screen--text">You made <span id=finalMove> </span> moves </p>
+                <img src="assets/images/bg-images/win-screen.png" alt="image of ash having won all badges"
+                    class="win-screen--img">
             </div>
-            <button id="play-again" onclick="playAgain()" class="glass">
+            <button id="play-again" onclick="playAgain()" class="glass win-screen--btn">
                 Play again!</a>
             </button>
             <a href="gametype.html">
-                <button class="glass">Return to game selection screen</button>
+                <button class="glass win-screen--btn">Return to game selection screen</button>
             </a>
         </div>
     </div>
