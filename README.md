@@ -287,8 +287,24 @@ A local clone of this repository can be made in the following way:
 
 # Credits: 
 
-## Content: 
+## Content and Media:
 
 ## Code:
 
+A huge help for this project and how to go around with using the functions and writing them is a combination of:
+
+- [ThisTutorial](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-2-matching-cards)
+- [FreeCodeCamp](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae/)
+
+However all functions are rewritten in my own words.
+Inspiration for the modal was taken from the top tutorial however again styled with my own classes.
+
+### Use off glassmorphism:
+
+This was used by following a tutorial from [CodeCafe](https://www.youtube.com/channel/UCOkYH8o4mzWnbLtinLhbYmg)
+which is a dutch youtube channel that has live coding sessions each tuesday that you can follow along to learn new things.
+
+### Bootstrap:
+
+Has again been used to lay out the page in order to achieve a responsive layout.
 ## Acknowledgments:
