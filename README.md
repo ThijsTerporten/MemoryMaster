@@ -21,10 +21,12 @@ The goal off the project is to provide a fun experience while playing the game.
 ## Structure: 
 
 The web application is responsive across all devices.
+> Minor bugs and visual glitches on certain devices, browser compatabillity has been added to accompany most issues.
 The web application is layed out in the following way:
 
 1. The landing page has the name of the game in a large font size.
 2. Underneath the title is a carousel which explains the rules of the game.
+> Replaced with a list because of time restrictions.
 3. Underneath the carousel is a large button which brings you to the game mode selection screen.
 
 On the game selection screen there will be three cards shown which function as buttons.
@@ -32,7 +34,7 @@ On the game selection screen there will be three cards shown which function as b
 1. Game mode = EASY
 2. Game mode = NORMAL   
 3. Game mode = HARD
-4. At the bottom off the screen is a back button to bring the user back to the rules page.
+4. At the bottom off the screen is a back button to bring the user back to the game select page.
 
 Game Type page structure:
 
@@ -41,6 +43,7 @@ Game Type page structure:
  - Normal = 20 cards, 10 matches.
  - Hard = 40 cards, 20 matches. 
 2. On the top of the page a timer will start running to keep track of the time elapsed. 
+> In a later version this will be stopped when the game ends and shows time remaining in the win screen.
 3. A counter will be next to that which counts the ammount of moves made by the user.
 4. In the top right will be two buttons. 
  - One to reset the current game.
@@ -61,6 +64,7 @@ The font used is Roboto with a fallback off sans-serif.
 
 To have a clean layout I have decided to use black and white as the dominant colors. This matches very well with the glassmorphism effect used for the cards.
 Black is the main background-color and text color is white. This has later been changed to a scenic background that matches with the memory game cards which has you find matching pokemon.
+A background linear gradient has been used to darken the images a little bit. 
 
 
 ### Images:
@@ -69,6 +73,7 @@ All images are taken from:
 
 - Pokemon Company website (Main background images)
 - Unsplash: the pokeball cover for the cards.  
+- Game winning modal image has been taken from bulbapedia.
 
 
 # Features: 
@@ -77,13 +82,17 @@ All images are taken from:
 
 - At this moment there are 3 game modes. Easy, normal, hard.
 - All three game modes have different animations on their respective selection screen.
+> Not added due to time restrictions yet. They just have different colors at this moment.
 - A timer will keep track off how long it takes to complete the game.
 - A counter will show how much moves a user has made.
 - Completing the game will show the users score. 
+> Shows how many moves a user has made at this moment. 
 - The user is easily able to navigate between game modes.
 - The user is able to manually refresh the game. 
 - Popup warnings are shown to prevent the user from resetting or returning by accident.
+> Not implemented as of yet.
 - Once a user has matched cards they are removed from the game. 
+> They remain opened as of now
 
 ## Future Features: 
 
@@ -91,6 +100,7 @@ All images are taken from:
 - Turn the app in a game library with severel different classic games.
 - Link to different API's so that a user never sees the same images.
 - Implement a star rating based on the users score.
+> Star rating has been implemented. 
 
 # Technologies used:
 
@@ -118,7 +128,9 @@ All images are taken from:
 
 - [JShint](https://jshint.com/) to validate JavaScript code
 - [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS code
+> Warns user that backdrop-fliter isn't a property. 
 - [W3 HTML Validator](https://validator.w3.org/) to validate HTML code
+> All HTML-code passes the test.
 
 # Testing: 
 
