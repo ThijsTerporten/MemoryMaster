@@ -6,7 +6,7 @@ A deployed version of my website can be found [here](https://thijsterporten.gith
 
 ## Showcase 
 
-![showcase-screenshot](assets/images/wireframe/MockUp.png)
+![showcase-screenshot](assets/images/wireframe/mock-up.png)
 
 ## navigation
 
