@@ -185,4 +185,3 @@ function playAgain(){
 
 //Event listener for clicking cards
 cards.forEach(card => card.addEventListener('click', flipCard));
-console.log(cards);
