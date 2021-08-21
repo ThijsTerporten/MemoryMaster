@@ -1,7 +1,7 @@
-const card = document.querySelectorAll('.game-card')
-const countDownTimer = document.getElementById('timeElapsed')
-const moveCounter = document.getElementById('movesUsed')
-const stars = document.getElementsByClassName('fas fa-star')
+const card = document.querySelectorAll('.game-card');
+const countDownTimer = document.getElementById('timeElapsed');
+const moveCounter = document.getElementById('movesUsed');
+const stars = document.getElementsByClassName('fas fa-star');
 
 let moves = 0;
 let time;
@@ -10,7 +10,7 @@ let countDownStart = false;
 let turnedCards = false;
 let timeOutBoard = false;
 let firstCard, secondCard;
-let cards = [...card]
+let cards = [...card];
 let matched = [];
 let starlist = document.querySelectorAll('.score-panel li');
 let winScreen = document.getElementById('win-screen');
@@ -30,18 +30,16 @@ function countDown() {
         countDownTimer.innerHTML = seconds;
         if (seconds <= 0 || seconds < 1) {
             stopTime();
-        };
+        }
     }, 1000);
-};
+}
 
 // Function to stopTime
 function stopTime() {
     clearInterval(time);
 }
 
-
 // Function to count the moves
-
 function countMoves() {
     moves++;
     moveCounter.innerHTML = moves;
@@ -141,7 +139,7 @@ function shuffle(cards) {
         let randomize = Math.floor(Math.random() * 10);
         card.style.order = randomize;
     });
-};
+}
 
 //Function for star rating system
 
@@ -175,10 +173,11 @@ function winGame() {
     if (matched.length === 5) {
         winScreen.classList.add('show');
         document.getElementById("finalMove").innerHTML = moves;
-        var starsLeft = showStars.innerHTML;
-        document.getElementById("starRating").innerHTML = starsLeft;
     }
 }
+
+// onclickevent in modal
+// function is called when user clicks either the x in the modal or the play again button
 
 function playAgain(){
     winScreen.classList.remove("show");
@@ -188,4 +187,3 @@ function playAgain(){
 
 //Event listener for clicking cards
 cards.forEach(card => card.addEventListener('click', flipCard));
-console.log(cards);
