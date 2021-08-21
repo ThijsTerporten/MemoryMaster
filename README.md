@@ -128,7 +128,7 @@ All images are taken from:
 
 - [JShint](https://jshint.com/) to validate JavaScript code
 - [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS code
-> Warns user that backdrop-fliter isn't a property. 
+> Warns user that backdrop-fliter isn't a property. Explained in bug section further.
 - [W3 HTML Validator](https://validator.w3.org/) to validate HTML code
 > All HTML-code passes the test.
 
