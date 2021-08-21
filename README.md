@@ -299,6 +299,7 @@ Pictures where taken from:
 - Pokemon Company website (Main background images) [Website](https://www.pokemon.com/us/pokemon-virtual-backgrounds/)
 - Unsplash: the pokeball cover for the cards.[LinkToImage](https://unsplash.com/photos/trz1LbugtHI)
 - Sprites where downloaded from [this](https://veekun.com/dex/downloads) Website.
+- README template from code institute [README.md template](https://github.com/Code-Institute-Solutions/readme-template).
 
 ## Code:
 
