@@ -14,7 +14,7 @@ body {
     justify-content: center;
 }
 
-body > .container {
+body>.container {
     padding-top: 10px;
 }
 
@@ -31,6 +31,7 @@ h2 {
 p {
     font-size: 3rem;
 }
+
 /* Background images for the body element for each page*/
 
 
@@ -39,31 +40,32 @@ p {
     background-size: cover;
     background-position: center;
 }
+
 .city {
     background-image: url('../images/bg-images/city.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.1)) , url("../images/bg-images/city.jpg");
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../images/bg-images/city.jpg");
+
 }
 
 .arena {
     background-image: url('../images/bg-images/arena.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.1)) , url('../images/bg-images/arena.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('../images/bg-images/arena.jpg');
 
 }
 
 .forest {
     background-image: url('../images/bg-images/forest.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3)) , url('../images/bg-images/forest.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/bg-images/forest.jpg');
 }
 
 .canyon {
     background-image: url('../images/bg-images/canyon.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3)) , url('../images/bg-images/canyon.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/bg-images/canyon.jpg');
 }
 
 .volcano {
     background-image: url('../images/bg-images/volcano.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3)) , url('../images/bg-images/volcano.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/bg-images/volcano.jpg');
 }
 
 
@@ -138,11 +140,12 @@ footer {
 /* Glassmorphism styling */
 
 .glass {
-        background-color: rgb(255 255 255 / 20%);
-        border: 0.2rem solid rgba(217 217 217 / 0.3);
-        backdrop-filter: blur(0.3rem);
-        box-shadow: 0 1rem 10rem rgba(0,0,0,0.2);  /* x y blur color */
-        border-radius: 5px;
+    background-color: rgb(255 255 255 / 20%);
+    border: 0.2rem solid rgba(217 217 217 / 0.3);
+    backdrop-filter: blur(0.3rem);
+    box-shadow: 0 1rem 10rem rgba(0, 0, 0, 0.2);
+    /* x y blur color */
+    border-radius: 5px;
 }
 
 /* Styling for game selection cards */
@@ -254,7 +257,7 @@ footer {
     width: 120px;
     height: 175px;
     border-radius: 5px;
-    border: 0.2rem solid rgba(255,255,255,0.25);
+    border: 0.2rem solid rgba(255, 255, 255, 0.25);
 }
 
 .game-card {
@@ -268,14 +271,26 @@ footer {
 
 .game-card.visible .card-back {
     transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg); /* WebKit */
+    -moz-transform:rotateY(-180deg); /* Mozilla */
+    -o-transform: rotateY(-180deg); /* Opera */
+    -ms-transform: rotateY(-180deg);/* Internet Explorer */
 }
 
 .game-card.visible .card-front {
     transform: rotateY(0);
+    -webkit-transform: rotateY(0); /* WebKit */
+    -moz-transform:rotateY(0); /* Mozilla */
+    -o-transform: rotateY(0); /* Opera */
+    -ms-transform: rotateY(0);/* Internet Explorer */
 }
 
 .card-front {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* WebKit */
+    -moz-transform:rotateY(180deg); /* Mozilla */
+    -o-transform: rotateY(180deg); /* Opera */
+    -ms-transform: rotateY(180deg);/* Internet Explorer */
 }
 
 .pokemon {
@@ -283,10 +298,10 @@ footer {
     position: absolute;
     width: 140px;
     height: 140px;
-    border: 0.2rem solid rgba(255,255,255,0.25);
+    border: 0.2rem solid rgba(255, 255, 255, 0.25);
 }
 
-.score-panel  {
+.score-panel {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -303,11 +318,11 @@ ul {
 
 .win-screen {
     position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	visibility: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -321,33 +336,35 @@ ul {
 .popup {
     margin: auto;
 }
+
 .popup .close {
-	position: absolute;
-	top: 20px;
-	right: 30px;
-	transition: all 200ms;
-	font-size: 30px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #fafafa;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fafafa;
 }
 
 .popup h2 {
-	margin-top: 0;
-	color: #fafafa;
+    margin-top: 0;
+    color: #fafafa;
 }
 
 .popup .content-1,
 .content-2 {
-	max-height: 30%;
-	overflow: auto;
-	text-align: start;
+    max-height: 30%;
+    overflow: auto;
+    text-align: start;
     color: #fafafa;
 }
 
 .show {
     visibility: visible;
 }
+
 /* ANIMATIONS */
 
 /* Animation for after pseudo element for the navigation buttons */
@@ -356,6 +373,7 @@ ul {
         transform: scale(1);
         opacity: 0.8;
     }
+
     100% {
         transform: scale(1.2);
         opacity: 0;
@@ -370,6 +388,7 @@ ul {
         top: 55%;
         opacity: 0;
     }
+
     to {
         backdrop-filter: blur(0.4rem);
         top: 50%;
