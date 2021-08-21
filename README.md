@@ -45,6 +45,7 @@ The goal off the project is to provide a fun experience while playing the game.
 
 The web application is responsive across all devices.
 > Minor bugs and visual glitches on certain devices, browser compatabillity has been added to accompany most issues.
+
 The web application is layed out in the following way:
 
 1. The landing page has the name of the game in a large font size.
@@ -75,7 +76,8 @@ Game Type page structure:
 
 ## Wireframes: 
 
-Wireframes for the layout of the project can be found here: 
+Wireframes for the layout of the project can be found here: [here](assets/images/wireframe/wireframe.png)
+
 
 ### Wireframing functions:
 
