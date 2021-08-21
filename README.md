@@ -1,6 +1,29 @@
 # Project summary:
 
-This is a simple and fun memory game created for my milestone 2 project for the code institute full stack development program.
+This is a simple and fun memory game created for my milestone 2 project for the code institute full stack development program. Designed to show understanding of functions and how they can be used to 
+manipulate the DOM and add interactivity to any web application. 
+A deployed version of my website can be found [here](https://thijsterporten.github.io/Milestone-2/index.html).
+
+## Showcase 
+
+![showcase-screenshot](assets/images/wireframe/MockUp.png)
+
+## navigation
+
+* [UX](#ux)
+  + [User-stories](#user-stories)
+* [Structure](#structure)
+* [Structure](#structure)
+* [Wireframes](#wireframes)
+* [Features](#features)
+  + [Existing-features](#existing-features)
+  + [Future-features](#futere-features)
+* [Testing](#testing)
+* [Bugs](#bugs)
+* [Deployment](#deployment)
+* [Credits](#credits)
+* [Content](#content)
+* [Acknowledgements](#acknowledgements)
 
 # UX
 
@@ -135,11 +158,12 @@ All images are taken from:
 ## Other programs used:
 
 - Balsamiq: for wireframing.
-- Google Fonts: for the font size.
+- Google Fonts: for the fonts used.
 - Can I use: to check for browser compatibillity.
 - [Github](https://github.com/): for hosting the projects repository and creating a live page with [Github pages](https://pages.github.com/)
 - [Visual Studio Code](https://code.visualstudio.com/): as a IDE (Integrated Development Environment) for developing the project
 - [Git](https://en.wikipedia.org/wiki/Git): for version control
+- 
 
 ## Code validation:
 
