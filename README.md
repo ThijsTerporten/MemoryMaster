@@ -2,7 +2,7 @@
 
 This is a simple and fun memory game created for my milestone 2 project for the code institute full stack development program. Designed to show understanding of functions and how they can be used to 
 manipulate the DOM and add interactivity to any web application. 
-A deployed version of my website can be found [here](https://thijsterporten.github.io/Milestone-2/index.html).
+A deployed version of my website can be found [here](https://thijsterporten.github.io/MemoryMaster/).
 
 ## Showcase 
 
@@ -324,7 +324,7 @@ which is a dutch youtube channel that has live coding sessions each tuesday that
 
 ### Bootstrap:
 
-Has again been used to lay out the page in order to achieve a responsive layout.
+Has been used to lay out the page in order to achieve a responsive layout.
 
 ## Acknowledgments:
 
