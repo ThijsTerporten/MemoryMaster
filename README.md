@@ -18,8 +18,6 @@ A deployed version of my website can be found [here](https://thijsterporten.gith
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
-* [Content](#content)
-* [Acknowledgements](#acknowledgements)
 
 # UX
 
@@ -62,13 +60,15 @@ Game Type page structure:
  - Easy = 10 cards, 5 matches.
  - Normal = 20 cards, 10 matches.
  - Hard = 40 cards, 20 matches. 
-2. On the top of the page a timer will start running to keep track of the time elapsed. 
+2. On the top of the page a timer will start counting down. 
 > In a later version this will be stopped when the game ends and shows time remaining in the win screen.
 3. A counter will be next to that which counts the ammount of moves made by the user.
 4. In the top right will be two buttons. 
  - One to reset the current game.
  - One to bring the user back to the gameType selection page.
+ > Position slightly changed for better user experience.
 5. Once a user has matched all cards a modal will popup and congratulate the user.
+6. If time runs out a popup will appear to tell the user to reset the game. 
 
 ## Wireframes: 
 
@@ -120,15 +120,18 @@ All images are taken from:
 
 - At this moment there are 3 game modes. Easy, normal, hard.
 - All three game modes have different animations on their respective selection screen.
-> Not added due to time restrictions yet. They just have different colors at this moment.
+> They just have different colors at this moment.
 - A timer will keep track off how long it takes to complete the game.
-- A counter will show how much moves a user has made.
+> Countdown timer that pops up an alert when the user has no time left. 
+- A counter will show how many moves a user has made.
 - Completing the game will show the users score. 
 > Shows how many moves a user has made at this moment. 
 - The user is easily able to navigate between game modes.
+> Go back to game selection screen with button.
 - The user is able to manually refresh the game. 
-- Popup warnings are shown to prevent the user from resetting or returning by accident.
-> Not implemented as of yet.
+> Reset button in game info panel.
+- Implement a star rating based on the users score.
+> Star rating has been implemented. More of a visual though throughout the game.
 - Once a user has matched cards they are removed from the game. 
 > They remain opened as of now
 
@@ -140,6 +143,8 @@ All images are taken from:
 - Implement a star rating based on the users score.
 > Star rating has been implemented. 
 - A way to display all stats for the user. Time remaining stars earned etc.
+- Popup warnings are shown to prevent the user from resetting or returning by accident.
+> Not implemented as of yet.
 
 # Technologies used:
 
